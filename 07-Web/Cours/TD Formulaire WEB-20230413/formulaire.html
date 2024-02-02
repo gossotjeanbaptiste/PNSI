@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="utf-8" />
+   <title>Mon premier formulaire </title>
+   <style>
+      .content {
+         width: 60%;
+         margin-left: 10%;
+         padding: 10px;
+         border: 5px solid #c0c0c0;
+      }
+
+      .rouge {
+         color: red;
+      }
+
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+   </style>
+</head>
+
+<body>
+
+
+   <div class="content">
+
+      <label for="addition"><strong>1) Une petite addition</strong></label>
+      5 + 3 = <input type="texte" id="addition" placeholder="saisir le résultat" />
+
+      <p><strong>2) Question à choix multiples</strong><br>
+         Parmi les propositions suivantes qui est le compagnon de Robinson Crusoé ? </p>
+      <div id="names">
+         <input type="radio" id="lundi" name="robin" value="monday" checked> Lundi
+         <input type="radio" id="mardi" name="robin" value="tuesday"> Mardi
+         <input type="radio" id="mercredi" name="robin" value="wednesday"> Mercredi
+         <input type="radio" id="jeudi" name="robin" value="thursday"> Jeudi
+         <input type="radio" id="vendredi" name="robin" value="friday"> Vendredi
+         <input type="radio" id="samedi" name="robin" value="saturday"> Samedi
+         <input type="radio" id="dimanche" name="robin" value="sunday"> Dimanche
+      </div>
+
+      <p><strong>3) Selecteur : </strong> </p>
+      <label for="pet-select">Quel est animal miaule ? </label>
+      <select name="pets" id="pets">
+         <option value="">--Sélectionnez une réponse--</option>
+         <option value="dog">Chien</option>
+         <option value="cat">Chat</option>
+         <option value="hamster">Hamster</option>
+         <option value="parrot">Perroquet</option>
+         <option value="spider">Araignée</option>
+         <option value="goldfish">Poisson rouge</option>
+         <option value="snake">Serpent</option>
+         <option value="fourmi">Fourmi </option>
+      </select>
+
+      <p><button id="function_call">valider vos réponses</button></p>
+
+   </div>
+
+   <p id="score">Score 0/3</p>
+
+
+   <script>
+      var bouton = document.getElementById("function_call")
+      bouton.addEventListener("click", maFonction);
+
+      function maFonction() {
+         var addition = document.getElementById("addition");
+         var robin = document.getElementsByName("robin");
+         var pets = document.getElementById("pets").value;
+         var score = document.getElementById("score");
+         var point = 0;
+
+         if (addition.value == 8) {
+            point = point + 1;
+            addition.className = ""
+         }
+         else {
+            addition.className = "rouge"
+         }
+
+         for (var i = 0, length = robin.length; i < length; i++) {
+            if (robin[i].checked) {
+               if (robin[i].value == "friday") {
+                  point++;
+               }
+               break;
+            }
+         }
+
+
+         if (pets == "cat") {
+            point = point + 1;
+         }
+
+         score.firstChild.nodeValue = ' score : ' + point + '/3';
+      }
+
+   </script>
+
+</body>
+
+</html>

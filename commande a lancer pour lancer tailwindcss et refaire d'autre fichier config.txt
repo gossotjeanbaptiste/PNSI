@@ -1,0 +1,18 @@
+1 Creer le CSS et les configs de TailwindCSS
+
+`npm init tailwindcss` 
+
+creer un fichier .css avec dedans 
+
+`@tailwind base;`
+`@tailwind components;`
+`@tailwind utilities;`
+
+
+dans le fichier `tailwind.config.js` modifier la ligne content avec le chemin des fichiers ou ce que y a marqué sur le site de tailwindcss
+
+2 Général a tout les cas : 
+
+mettre la ligne de commande : 
+
+npx tailwindcss -i <inserer ici le chemin du fichier de départ sur lequel on aura mit les imports de @tailwind> -o <chemin par lequel on veut que toute nos modif sois faites sur le css de tailwind avec le nom du fichier> --watch

@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 3em;
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+.chat {
+    text-align: center;
+}
+
+.couverture {
+    background-color: #0F8;
+}
+
+body {
+    background-color: #00F;
+}
+
+p {
+    background-color: #0F0;
+    font-size: 1.5em;
+    color: yellow;
+}

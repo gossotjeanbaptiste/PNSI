@@ -1,0 +1,32 @@
+body {
+    background-color: #FBF7CC;
+    font-family: Lexend, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBF7CC;
+    border: 1px solid #333;
+    padding: 10px;
+    width: 400px;
+    height: auto;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+form p {
+    color: red;
+}
+
+#btn_valider {
+    width: 100px;
+}

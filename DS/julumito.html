@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>SegDeg</title>
+    <meta name="generator" content="Geany 1.38" />
+    <link rel="stylesheet" href="cofroast.css" />
+    <script type="text/javascript" src="cofroast.js"></script>
+</head>
+<!---
+il manque le début du document...
+le titre de l'onglet dans le navigateur doit être SegDeg
+-->
+
+<body>
+    <h1>CofRoast</h1>
+    <h3><em>le torréfacteur de l'excellence !</em></h3>
+
+    <h2>Julumito</h2>
+
+    <ul id="desc">
+        <li>Pays : Colombie</li>
+        <li>Région : Cauca</li>
+        <li>Altitude : 2000m</li>
+        <li>Variété : <a href="https://fr.wikipedia.org/wiki/Castillo_(caf%C3%A9)">Castillo</a></li>
+        <li>Méthode : Lavé</li>
+        <li>Producteur : Diego Sanchez</li>
+    </ul>
+
+    <!--
+    Il manque l'image du caféier ici
+    -->
+    <img src="cafeier.jpg">
+
+    <form id="commande">
+        <p>Commandez ce produit :</p>
+        <div id="choix">
+            <div id="pack">
+                <P>Choisissez le poids souhaité</P>
+                <label for="rad_200">200g </label><input type="radio" name="poids" id="rad_200" value="200" />
+                <label for="rad_500">500g </label><input type="radio" name="poids" id="rad_500" value="500" />
+                <!--
+                il manque le bouton radio pour la troisième option de poids
+    -->
+                <label for="rad_1000">1kg</label><input type="radio" name="poids" id="rad_1000" value="1000" />
+
+            </div>
+
+            <div id="mouture">
+                <label for="liste_mouture">Choisissez la mouture souhaitée</label>
+                <select name="mouture" id="liste_mouture">
+                    <option value="grains" id="grains">Grains (pas moulus)</option>
+                    <option value="press" id="press">Pour French Press</option>
+                    <!--
+            il manque 2 entrées dans la liste déroulante : Pour filtre et Pour expresso
+    -->
+                    <option value="filtre" id="filtre">Pour filtre</option>
+                    <option value="expresso" id="expresso">Pour expresso</option>
+                </select>
+
+            </div>
+        </div>
+
+        <button id="btn" type="button">Placer dans le panier</button>
+    </form>
+    <p id="message"></p>
+
+
+    <!--
+    Il manque l'image des grains ici
+    -->
+    <img src="grains.jpg" />
+
+
+    <script src="cofroast.js"></script>
+    <!--
+            il manque ici les lignes de fin....
+    -->
+</body>
+
+</html>

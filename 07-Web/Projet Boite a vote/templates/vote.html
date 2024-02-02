@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page de vote</title>
+    <link rel="icon" href="../static/icon/ballot-box-with-ballot_1f5f3-fe0f.png">
+    <link rel="stylesheet" href="../static/style_vote.css">
+</head>
+
+<body>
+    
+    <h1><strong>Votez :</strong></h1>
+
+    <p> Avez-vous mangez des frites belges a Bruxelles une fois dans votre vie ?</p>
+
+    <form action="{{url_for("a_vote")}}" method="post">
+        <input type="radio" name="choix" value="oui" id="oui" checked>
+        <label for="oui">Oui</label><br>
+        <input type="radio" name="choix" value="non" id="non">
+        <label for="non">Non</label><br>
+        <button type="submit">Valider</button>  
+    </form>
+
+</body>
+
+</html>

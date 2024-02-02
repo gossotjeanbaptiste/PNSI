@@ -1,0 +1,46 @@
+@font-face {
+	font-family: Lexend;
+	src: url("fonts/Lexend-Regular.ttf");
+}
+
+body {
+	background-color: #666;
+	font-family: Lexend;
+	text-align: center;
+}
+
+img {
+	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+	color: #66B4FF;
+	font-size: 40px;
+	font-family: Bookman Old Style;
+}
+
+form {
+	display: inline-flex;
+	flex-direction: column;
+	background-color: #666;
+	border: 1px solid #333;
+	padding: 10px;
+	width: 400px;
+	height: auto;
+	justify-content: space-between;
+	margin: 20px;
+	border-radius: 20px;
+	align-items: center;
+	text-align: center;
+}
+
+form label input {
+	font-family: Lexend;
+	font-size: 1em;
+	border-radius: 10px;
+	border: 2px solid #75F;
+}

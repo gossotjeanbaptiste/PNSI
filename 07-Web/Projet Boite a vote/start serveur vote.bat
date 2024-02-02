@@ -1,0 +1,1 @@
+flask --app serveur_vote.py run --debug

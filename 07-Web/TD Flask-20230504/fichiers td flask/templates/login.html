@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="utf-8" />
+<title>Authentification</title>
+<meta name="generator" content="Geany 1.38" />
+<link rel="stylesheet" href="static/style_login.css" />
+</head>
+
+<body>
+    <h1>Intranet du groupe 1 Spé NSI Première</h1>
+    <h3>Veuillez vous authentifier :</h3>
+    <form id="form_auth" action="auth" method="POST">
+        <label for="chp_login">Login :<input id="chp_login" name="chp_login" size="12" /></label>
+        <label for="chp_mdp">PassWord :<input type="password" id="chp_mdp" name="chp_mdp" size="12" /></label>
+        <input id="btn_valider" type="submit" value="Valider">
+        {%if erreur == True%}
+            <p>Nom d'utilisateur ou mot de passse incorrect.</p>
+        {% endif %}
+    </form>
+
+</body>
+
+</html>
