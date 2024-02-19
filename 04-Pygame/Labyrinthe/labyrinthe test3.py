@@ -1,6 +1,6 @@
 import random
 import pygame
-from pygame import * 
+from pygame import *
 import os
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -8,9 +8,9 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def generate_custom_table(width, height, rate_0=0.5, rate_1=0.5):
     global table
-    choices = [0, 1]
+    choix = [0, 1]
     probabilities = [rate_0, rate_1]
-    table = [[random.choices(choices, probabilities)[0]
+    table = [[random.choices(choix, probabilities)[0]
               for _ in range(width)] for _ in range(height)]
     return table
 
